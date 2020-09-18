@@ -77,6 +77,7 @@ The following file types will be encrypted as default setting:
 * .htm
 * .js
 * .css
+* .key
 
 ### Edit encrypted file types
 
@@ -87,7 +88,7 @@ You can specify the encryption file types by editing `plugin.xml`.
 ```
 <cryptfiles>
     <include>
-        <file regex="\.(htm|html|js|css)$" />
+        <file regex="\.(htm|html|js|key|css)$" />
     </include>
     <exclude>
         <file regex="exclude_file\.js$" />
